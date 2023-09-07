@@ -1,0 +1,183 @@
+/* Reset */
+body {
+  margin: unset;
+  padding: unset;
+}
+
+h1,
+h2,
+h3 {
+  margin: unset;
+  font-size: unset;
+}
+
+p,
+span {
+  margin: unset;
+}
+
+a {
+  margin: unset;
+  text-decoration: unset;
+}
+input {
+  outline: unset;
+}
+
+/* Typography*/
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.67;
+}
+
+/* Contents*/
+
+body {
+  height: 100vh;
+  display: flex;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #36384d;
+}
+
+.sign-up-section {
+  position: absolute;
+  inset: 0;
+  max-width: 1000px;
+  max-height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 33px;
+}
+
+.sign-up__contents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  font-size: 1.6rem;
+  overflow: scroll;
+}
+
+.sign-up__contents > div {
+  margin: auto;
+  width: 80%;
+}
+
+.sign-up__contents h1 {
+  font-size: 5rem;
+}
+
+.sign-up__check-box {
+  margin: 20px 0;
+}
+
+.sign-up__contents .sign-up__check {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up__contents .sign-up__check > img {
+  margin-right: 10px;
+}
+
+.sign-up__contents .sign-up__btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up__contents .sign-up__btn-text span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sign-up__contents .sign-up__btn-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up__contents .sign-up__btn-text span:first-child {
+  color: #545361;
+}
+.sign-up__contents .sign-up__btn-text span:last-child,
+.sign-up__contents .sign-up__btn > input.error {
+  color: #d97772;
+}
+
+.sign-up__contents .sign-up__btn > input.error {
+  border: 0.1rem solid #d97772;
+  background-color: #ffe8e6;
+}
+
+.sign-up__contents .sign-up__btn > input.error:focus {
+  border: 0.2rem solid #d97772;
+}
+
+.sign-up__contents .sign-up__btn > input,
+.sign-up__contents .sign-up__btn > div {
+  border-radius: 9px;
+}
+
+.sign-up__contents .sign-up__btn > input {
+  padding: 18px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+.sign-up__contents .sign-up__btn > input:focus {
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
+
+.sign-up__contents .sign-up__btn > input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.6rem;
+}
+
+.sign-up__contents .sign-up__btn > .sign-up__btn-submit {
+  text-align: center;
+  background-color: #222641;
+  position: relative;
+  transition: opacity 0.5s;
+}
+.sign-up__contents .sign-up__btn > .sign-up__btn-submit:after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: inherit;
+  transition: opacity 0.5s;
+  background: linear-gradient(to left, #ff693b, #f3597c);
+}
+.sign-up__contents .sign-up__btn > .sign-up__btn-submit:hover:after {
+  opacity: 1;
+}
+
+.sign-up__contents .sign-up__btn > .sign-up__btn-submit > a {
+  display: block;
+  color: #ffffff;
+  position: relative;
+  padding: 15px 0;
+  height: 100%;
+  z-index: 2;
+}
+
+.sign-up__img {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
