@@ -189,6 +189,9 @@ h1 {
 .sign-up__img {
   display: flex;
 }
+.sign-up__img img {
+  content: url('../assets/images/illustration-sign-up-desktop.svg');
+}
 
 .hidden {
   display: none;
@@ -198,7 +201,7 @@ h1 {
 .success-section {
   max-width: 500px;
   max-height: 500px;
-  padding: 50px 65px 50px;
+  padding: 50px 65px;
   box-sizing: border-box;
 }
 
@@ -207,19 +210,69 @@ h1 {
   height: 100%;
   overflow: scroll;
 }
-.success__contents > img {
+.success__contents > div:first-child img {
   width: 60px;
   height: 60px;
 }
 
-.success__contents > h1 {
+.success__contents > div:first-child > h1 {
   margin-top: 10px;
 }
-.success__contents > p {
+.success__contents > div:first-child > p {
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 1.6rem;
 }
-.success__contents > p > span {
+.success__contents > div:first-child > p > span {
   font-weight: bold;
+}
+
+/*mobile*/
+@media (max-width: 575px) {
+  body {
+    height: auto;
+    display: block;
+    padding: unset;
+  }
+  .sign-up-section {
+    flex-direction: column-reverse;
+    border-radius: unset;
+    padding: 0 0 30px 0;
+    height: auto;
+    max-height: unset;
+    position: relative;
+  }
+  .sign-up__img img {
+    content: url('../assets/images/illustration-sign-up-mobile.svg');
+    width: 100%;
+    height: 100%;
+  }
+  .sign-up__contents {
+    width: 100%;
+    height: auto;
+    overflow: unset;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .sign-up__contents h1 {
+    margin: 30px 0;
+  }
+
+  /*  success page */
+  .success-section {
+    border-radius: unset;
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    padding: 50px 30px;
+  }
+  .success__contents {
+    display: flex;
+    flex-direction: column;
+    overflow: unset;
+  }
+  .success__contents > div:first-child {
+    flex-grow: 1;
+  }
 }

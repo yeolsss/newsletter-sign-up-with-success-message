@@ -86,7 +86,7 @@ emailSubmitBtn.addEventListener('click', (event) => {
 });
 
 // dismiss message btn 클릭시 sign-up 페이지로 돌리기
-dismissBtn.addEventListener('click', (event) => {
+dismissBtn.addEventListener('click', () => {
   // section class toggle 함수 호출
   onSectionClass();
 });
