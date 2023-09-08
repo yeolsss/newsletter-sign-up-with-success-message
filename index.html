@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <!--fonts end-->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -40,15 +40,15 @@
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <div class="sign-up__check-box">
             <div class="sign-up__check">
-              <img src="assets/images/icon-list.svg" alt="" />
+              <img src="./assets/images/icon-list.svg" alt="" />
               <span>Product discovery and building what matters</span>
             </div>
             <div class="sign-up__check">
-              <img src="assets/images/icon-list.svg" alt="" />
+              <img src="./assets/images/icon-list.svg" alt="" />
               <span>Measuring to ensure updates are a success</span>
             </div>
             <div class="sign-up__check">
-              <img src="assets/images/icon-list.svg" alt="" />
+              <img src="./assets/images/icon-list.svg" alt="" />
               <span>And much more!</span>
             </div>
           </div>
@@ -58,34 +58,42 @@
                 <span>Email address</span>
                 <span class="error-text hidden">Valid email required</span>
               </div>
-              <input type="text" placeholder="email@company.com" />
-              <div class="sign-up__btn-submit">
-                <a href="#">Subscribe to monthly newsletter</a>
+              <input id="email" type="email" placeholder="email@company.com" />
+              <div class="sign-up__btn-div">
+                <a id="sign-up__btn-submit" href="#"
+                  >Subscribe to monthly newsletter</a
+                >
               </div>
             </div>
           </form>
         </div>
       </div>
       <div class="sign-up__img">
-        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
       </div>
     </section>
-    <!-- Sign-up form end -->
 
-    <!-- Success message start -->
-
-    <!--Thanks for subscribing!
-
-    A confirmation email has been sent to ash@loremcompany.com.
-    Please open it and click the button inside to confirm your subscription.
-
-    Dismiss message-->
-
-    <!-- Success message end -->
+    <section class="success-section hidden">
+      <div class="success__contents">
+        <img src="./assets/images/icon-success.svg" alt="" />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+        <div class="success__btn-div">
+          <a id="" href="#">Dismiss message</a>
+        </div>
+      </div>
+    </section>
 
     <!--<div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">yeols</a>.
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">yeols</a>.
     </div>-->
+    <script src="./js/app.js"></script>
   </body>
 </html>
